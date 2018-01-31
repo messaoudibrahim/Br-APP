@@ -9,6 +9,7 @@ import { CourseComponent } from './course/course.component';
 import {CoursesService} from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import {AuthorserviceService} from './authorservice.service';
+import { FavoriteComponent } from './favorite/favorite.component';
 
 
 
@@ -18,7 +19,8 @@ import {AuthorserviceService} from './authorservice.service';
     AppComponent,
       CoursesComponent,
       CourseComponent,
-      AuthorsComponent
+      AuthorsComponent,
+      FavoriteComponent
   ],
   imports: [
     BrowserModule,
