@@ -11,6 +11,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import {AuthorserviceService} from './authorservice.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
+import { InputFormatDirective } from './input-format.directive';
 
 
 
@@ -22,7 +23,8 @@ import { PanelComponent } from './panel/panel.component';
       CourseComponent,
       AuthorsComponent,
       FavoriteComponent,
-      PanelComponent
+      PanelComponent,
+      InputFormatDirective
   ],
   imports: [
     BrowserModule,
