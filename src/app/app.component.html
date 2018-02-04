@@ -1,1 +1,26 @@
-<favorite [isFavorite]="post.isFavorite" (change)="onClick()"></favorite>
+
+<!--<like
+    [countLike] = "tweet.countLike"
+    [isActive]= "tweet.isLiked"
+>
+</like>-->
+
+
+<!--------------------------------------------switch case--------------------------------------------->
+
+<!--<ul class="nav nav-pills">
+    <li [class.active]="viewMode == 'map'"><a (click)="viewMode = 'map'">map view</a></li>
+    <li [class.active]="viewMode == 'list'"><a (click)="viewMode = 'list'">list view</a></li>
+</ul>
+<br>
+<div [ngSwitch]="viewMode">
+    <div *ngSwitchCase="'map'"> map view content</div>
+    <div *ngSwitchCase="'list'"> list view content</div>
+    <div *ngSwitchDefault>other ways</div>
+</div>-->
+
+<ul>
+    <li *ngFor="let course of courses">
+        {{ course.name }} {{ course.id }}
+    </li>
+</ul>

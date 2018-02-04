@@ -10,6 +10,8 @@ import {CoursesService} from './courses.service';
 import { AuthorsComponent } from './authors/authors.component';
 import {AuthorserviceService} from './authorservice.service';
 import { FavoriteComponent } from './favorite/favorite.component';
+import { PanelComponent } from './panel/panel.component';
+import { LikeComponent } from './like/like.component';
 
 
 
@@ -20,7 +22,9 @@ import { FavoriteComponent } from './favorite/favorite.component';
       CoursesComponent,
       CourseComponent,
       AuthorsComponent,
-      FavoriteComponent
+      FavoriteComponent,
+      PanelComponent,
+      LikeComponent
   ],
   imports: [
     BrowserModule,

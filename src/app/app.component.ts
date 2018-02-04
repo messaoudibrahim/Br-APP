@@ -5,9 +5,19 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
+
 export class AppComponent {
-  post  = {
-    title: 'titre',
-      isFavorite: true
-  };
+  /*tweet = {
+    body: '...',
+      countLike : 10,
+      isLiked: true
+  }*/
+
+//viewMode = 'ma';
+
+  courses = [
+      { id : 1, name: 'course1' },
+      { id : 2, name: 'course2' },
+      { id : 3, name: 'course3' },
+  ];
 }
