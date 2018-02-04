@@ -1,4 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input,Output } from '@angular/core';
+import {EventEmitter} from 'selenium-webdriver';
 
 @Component({
   selector: 'favorite',
@@ -6,7 +7,8 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./favorite.component.css']
 })
 export class FavoriteComponent implements OnInit {
-  @Input() isFavorite: boolean;
+  @Input('nickName') isFavorite: boolean;
+  @Output() change = new EventEmitter();
   constructor() { }
 
   ngOnInit() {
