@@ -12,6 +12,7 @@ import {AuthorserviceService} from './authorservice.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { InputFormatDirective } from './input-format.directive';
+import { ZipyComponent } from './zipy/zipy.component';
 
 
 
@@ -24,7 +25,8 @@ import { InputFormatDirective } from './input-format.directive';
       AuthorsComponent,
       FavoriteComponent,
       PanelComponent,
-      InputFormatDirective
+      InputFormatDirective,
+      ZipyComponent
   ],
   imports: [
     BrowserModule,
