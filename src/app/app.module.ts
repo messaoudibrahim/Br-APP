@@ -11,7 +11,7 @@ import { AuthorsComponent } from './authors/authors.component';
 import {AuthorserviceService} from './authorservice.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
-import { InputFormatDirective } from './input-format.directive';
+import { LikeComponent } from './like/like.component';
 
 
 
