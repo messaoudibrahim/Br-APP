@@ -7,17 +7,6 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  /*tweet = {
-    body: '...',
-      countLike : 10,
-      isLiked: true
-  }*/
+    modeview = "map";
 
-//viewMode = 'ma';
-
-  courses = [
-      { id : 1, name: 'course1' },
-      { id : 2, name: 'course2' },
-      { id : 3, name: 'course3' },
-  ];
 }

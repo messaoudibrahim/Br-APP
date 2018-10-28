@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 
@@ -11,25 +11,35 @@ import { AuthorsComponent } from './authors/authors.component';
 import {AuthorserviceService} from './authorservice.service';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
-import { LikeComponent } from './like/like.component';
+import {InputFormatDirective} from './input-format.directive';
+import { ContactFormComponent } from './contact-form/contact-form.component';
+import { CourseFormComponent } from './course-form/course-form.component';
+import {SignupFormComponent} from './signup-form/signup-form.component';
 
 
 
 
 @NgModule({
   declarations: [
+      // register all the compontents, pipes and directives
     AppComponent,
       CoursesComponent,
       CourseComponent,
+      InputFormatDirective,
       AuthorsComponent,
       FavoriteComponent,
       PanelComponent,
-      InputFormatDirective
+      ContactFormComponent,
+      SignupFormComponent,
+      CourseFormComponent
   ],
+    //register all the modules
   imports: [
     BrowserModule,
-      FormsModule
+      FormsModule,
+      ReactiveFormsModule
   ],
+    // redister all the services
   providers: [
       CoursesService,
       AuthorserviceService

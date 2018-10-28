@@ -1,0 +1,36 @@
+<p>
+  course-form works!
+</p>
+
+
+<p class="text-center">Fill up this form</p>
+<form ngForm name="formulaire" #f="ngForm" (ngSubmit)="submit(f.value)"  >
+  <div class="form-group">
+    <label for="coursename">course name</label>
+    <input required minlength="3"  ngModel name="course" #params="ngModel" id="coursename" type="text" class="form-control" (change)="log(params)">
+    <div class="alert alert-danger" *ngIf="params.touched && !params.valid">
+      <div *ngIf="params.errors.required">this field is required</div>
+      <div *ngIf="params.errors.minlength">should containe more {{params.errors.minlength.requiredLength}} char</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="cat">category</label>
+    <select class="form-control" required ngModel name="cat" #selection="ngModel" id="cat" >
+      <option value=""></option>
+      <option value="dev">develepement</option>
+      <option value="arts">art</option>
+      <option value="language">langauge</option>
+    </select>
+  </div>
+  <div class="alert alert-danger" *ngIf="selection.touched && !selection.valid">
+    <div *ngIf="selection.errors.required">this field is required</div>
+  </div>
+    <div class="form-group">
+      <label>
+        <input ngModel type="checkbox" name="choice1" #checkeddd="ngModel" class="" value="gant">
+      </label>30 DAYS BACH GRANTEE<br>
+  </div>
+  <button class="btn btn-primary">submit</button>
+  <p>{{f.value | json}}</p>
+</form>
+

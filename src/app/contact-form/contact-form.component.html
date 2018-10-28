@@ -1,0 +1,17 @@
+<p>
+  contact-form works!
+</p>
+
+
+<form>
+  <div class="form-group">
+    <label for="name">first name</label>
+    <input ngModel name="firstname" #params="ngModel" id="name" type="text" class="form-control" (change)="log(params)">
+    <div class="alert alert-danger" *ngIf="params.touched && params.valid">there is an error with the name</div>
+  </div>
+  <div class="form-group">
+    <label for="comment">comment</label>
+    <textarea id="comment" ngModel name="comment" rows="10"  cols="20" class="form-control"></textarea>
+  </div>
+  <button class="btn btn-primary">submit</button>
+</form>
